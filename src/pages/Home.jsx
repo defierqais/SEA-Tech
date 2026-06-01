@@ -49,9 +49,11 @@ export default function Home() {
   return (
     <main>
       <HeroSection scrollTo={scrollTo} />
+      <FounderMessage />
       {/* <WhoWeAreSection /> */}
-      <AdvisorsSection />
+      
       <CoreDomainsSection />
+      <AdvisorsSection />
       {/* <ResearchDeploySection /> */}
       {/* <SolutionsSection /> */}
       <CollabEcosystem scrollTo={scrollTo} />
@@ -95,6 +97,140 @@ function HeroSection({ scrollTo }) {
               View Innovation Domains
             </button>
           </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function FounderMessage() {
+  return (
+    <section className="section founder">
+      <div className="container">
+        <FadeUp>
+          <div style={{ marginBottom: 52 }}>
+            <span className="tag">From the Founder</span>
+            <h2 className="section-heading">Founder's Message</h2>
+          </div>
+        </FadeUp>
+
+        <div className="founder__grid">
+
+          {/* Left — photo + info */}
+          <FadeUp delay={0.1}>
+            <div className="founder__left">
+              <div className="founder__photo-wrap">
+                {/* Replace src with actual image path when available */}
+                <div className="founder__photo-placeholder">
+                  {/* <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7FB069" strokeWidth="1.5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg> */}
+                  {/* <span>Photo coming soon</span> */}
+                  <img src="./public/advisors/DrHena.jpg" alt="Dr. Hena H" className='founder__photo' />
+                </div>
+                <div className="founder__photo-accent">
+                  <Leaf size={28} color="#fff" />
+                </div>
+              </div>
+
+              <div>
+                <div className="founder__name">Dr. Hena H.</div>
+                <div className="founder__title">Founder &amp; Director,<br />SEA-Tech Innovations LLP</div>
+                <p className="founder__credentials">
+                  Young Scientist Awardee with expertise spanning agricultural sciences,
+                  sustainable energy systems, and sustainability-driven innovation shaped at
+                  PAU Ludhiana, CSIR &amp; ICAR Labs, The Institute of Science (Bhabha Institute,
+                  Mumbai) and IISc Bangalore.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/dr-hena-h-b620901b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="founder__linkedin"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  LinkedIn Profile
+                </a>
+              </div>
+            </div>
+          </FadeUp>
+
+          {/* Right — message */}
+          <FadeUp delay={0.2}>
+            <div className="founder__right">
+
+              <div className="founder__quote-block">
+                <span className="founder__quote-mark">"</span>
+                <p className="founder__quote">
+                  The laws of thermodynamics remind us that resources are finite;
+                  human creativity determines how wisely we use them.
+                </p>
+              </div>
+
+              <div className="founder__body">
+                <p className="founder__para">
+                  Perhaps no challenge defines the 21st century more than our ability to reconcile
+                  human progress with planetary boundaries. As populations grow, economies expand,
+                  and environmental pressures intensify, the question is no longer whether new
+                  solutions are needed, but whether they can create prosperity while respecting the
+                  limits of our natural systems.
+                </p>
+                <p className="founder__para">
+                  It is this belief that inspired the establishment of SEA-Tech Innovations LLP.
+                </p>
+                <p className="founder__para">
+                  My journey through research and sustainability-focused disciplines has reinforced
+                  a simple conviction: knowledge achieves its greatest value when it is translated
+                  into solutions that improve lives, strengthen communities, and contribute
+                  positively to the environment. SEA-Tech Innovations is a platform to bridge
+                  scientific knowledge, technology, and interdisciplinary expertise with practical
+                  pathways for real-world change.
+                </p>
+                <p className="founder__para">
+                  Every challenge in sustainability is ultimately a systems problem, and every
+                  systems problem demands interdisciplinary thinking. The environmental, energy,
+                  agricultural, and resource challenges of our time are deeply interconnected and
+                  cannot be addressed in isolation. Meaningful progress emerges when knowledge from
+                  diverse disciplines converges toward a common purpose.
+                </p>
+                <p className="founder__para">
+                  Guided by this philosophy, SEA-Tech Innovations works across a diverse yet
+                  interconnected portfolio of domains, including renewable energy, bioenergy and
+                  biofuels, biomass valorization, sustainable aviation fuel (SAF), climate-smart
+                  agriculture, circular bioeconomy systems, carbon management, environmental
+                  sustainability, and emerging green technologies.
+                </p>
+                <p className="founder__para">
+                  Nature offers a profound lesson: the most enduring systems are not those that
+                  maximize extraction, but those that maintain balance, adaptability, and
+                  resilience. These principles continue to shape our approach and reinforce our
+                  belief that long-term progress must be built upon responsible resource
+                  utilization, environmental stewardship, scientific excellence, and collaborative
+                  action.
+                </p>
+                <p className="founder__para">
+                  The journey toward a sustainable future will not be defined by a single
+                  technology, policy, or institution. It will be shaped by collaboration,
+                  scientific rigor, and the courage to reimagine how we produce energy, food, and
+                  materials. At SEA-Tech Innovations, we are committed to translating innovative
+                  ideas into practical solutions that strengthen economies, restore ecosystems, and
+                  create lasting value for future generations. We invite researchers, industry
+                  partners, policymakers, and innovators to join us in building a more resilient
+                  and sustainable world.
+                </p>
+
+                <div className="founder__signature">
+                  <div className="founder__sig-name">Dr. Hena H.</div>
+                  <div className="founder__sig-title">Founder &amp; Director, SEA-Tech Innovations LLP</div>
+                </div>
+              </div>
+
+            </div>
+          </FadeUp>
+
         </div>
       </div>
     </section>
@@ -1013,7 +1149,7 @@ function ContactSection() {
                 Explore Collaboration
               </h2>
               <p className="contact__info-para">
-                Collaborate with SEA-Tech Innovations LLP on sustainability systems, pilot projects, research initiatives, energy systems, agriculture innovation, and strategic sustainability pathways.
+                  SEA-Tech Innovations LLP actively engages with academia, research institutions, industry stakeholders and innovation ecosystems to accelerate sustainability-driven solutions and technology translation.
               </p>
 
               <div className="contact__links">
