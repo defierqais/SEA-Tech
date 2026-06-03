@@ -573,8 +573,11 @@
 
   .why-card__right {
     border-left: none;
-    border-top-left-radius: var(--radius) ;
-    border-bottom-right-radius: none;
+    border-top-left-radius: none ;
+    border-top-right-radius: none ;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: no;
     border-top: 1px solid rgba(255,255,255,0.07);
     padding-top: 0;
     padding: 0 24px 22px;
@@ -585,6 +588,7 @@
     padding-bottom: 12px;
     border-top-right-radius: var(--radius) ;
     border-bottom-left-radius: none;
+    border-bottom-right-radius: none ;
   }
 }
 
