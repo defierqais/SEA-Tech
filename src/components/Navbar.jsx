@@ -54,7 +54,6 @@ export default function Navbar() {
   /* close on route change */
   useEffect(() => {
     setMobileOpen(false)
-    // setSeaOpen(false)
   }, [location])
 
   /* click outside dropdown */
@@ -83,7 +82,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${transparent ? 'navbar--transparent' : 'navbar--scrolled'} ${visible ? 'navbar--visible' : 'navbar--hidden'}`}>
+      <nav className={`navbar ${transparent ? 'navbar--transparent' : 'navbar--scrolled'} ${visible ? 'navbar--visible' : 'navbar--hidden'} ${mobileOpen ? 'mobile-menu--open' : ''}` }>
         <div className="container">
           <div className="navbar__inner">
 
@@ -94,52 +93,12 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="navbar__desktop">
-              <NavBtn
-                label="Home"
-                onClick={() => scrollTo('hero')}
-                light={transparent}
-              />
-
-              {/* SEA Dropdown */}
-              {/* <div className="nav-dropdown" ref={dropRef}>
-                <button
-                  className={triggerClass}
-                  onClick={() => setSeaOpen(v => !v)}
-                >
-                  SEA
-                  <ChevronDown
-                    size={13}
-                    className={`nav-dropdown__chevron ${seaOpen ? 'nav-dropdown__chevron--open' : ''}`}
-                  />
-                </button>
-
-                <div className={`nav-dropdown__panel ${seaOpen ? 'nav-dropdown__panel--open' : ''}`}>
-                  <div className="nav-dropdown__header">
-                    <span className="nav-dropdown__label">
-                      SEA — Sustainability · Energy · Agriculture
-                    </span>
-                  </div>
-                  {seaItems.map(item => {
-                    const Icon = item.icon
-                    return (
-                      <Link key={item.path} to={item.path} className="nav-dropdown__item">
-                        <div className="nav-dropdown__item-icon">
-                          <Icon size={15} color="#7FB069" />
-                        </div>
-                        <div>
-                          <div className="nav-dropdown__item-name">{item.label}</div>
-                          <div className="nav-dropdown__item-desc">{item.desc}</div>
-                        </div>
-                      </Link>
-                    )
-                  })}
-                </div>
-              </div> */}
-              <NavBtn label="Domains"           onClick={()=> scrollTo('domains')}   light={transparent} />
-              <NavBtn label="Research & Pilots" onClick={() => scrollTo('resesrch')} light={transparent} />
-              <NavBtn label="Advisors"          onClick={() => scrollTo('advisors')} light={transparent} />
-              <NavBtn label="Insights"          onClick={() => scrollTo('insights')} light={transparent} />
-              <NavBtn label="Contact"           onClick={() => scrollTo('contact')}  light={transparent} />
+              <NavBtn className="desk-nav" label="Home"              onClick={() => scrollTo('hero')}     light={transparent}/>
+              <NavBtn className="desk-nav" label="Domains"           onClick={()=> scrollTo('domains')}   light={transparent} />
+              <NavBtn className="desk-nav" label="Research & Pilots" onClick={() => scrollTo('resesrch')} light={transparent} />
+              <NavBtn className="desk-nav" label="Advisors"          onClick={() => scrollTo('advisors')} light={transparent} />
+              <NavBtn className="desk-nav" label="Insights"          onClick={() => scrollTo('insights')} light={transparent} />
+              <NavBtn className="desk-nav" label="Contact"           onClick={() => scrollTo('contact')}  light={transparent} />
             </div>
 
             {/* Right actions */}
@@ -147,11 +106,7 @@ export default function Navbar() {
               <button onClick={() => scrollTo('contact')} className="btn btn-primary">
                 Explore Collaboration
               </button>
-              <button
-                className="hamburger"
-                onClick={() => setMobileOpen(v => !v)}
-                aria-label="Toggle menu"
-              >
+              <button className="hamburger" onClick={() => setMobileOpen(v => !v)} aria-label="Toggle menu">
                 {mobileOpen ? <X size={22} /> : <Menu size={22} />}
               </button>
             </div>
@@ -162,45 +117,14 @@ export default function Navbar() {
         <div className={`mobile-menu ${mobileOpen ? 'mobile-menu--open' : ''}`}>
           <div className="mobile-menu__items">
             <button className="mobile-nav-btn" onClick={() => scrollTo('hero')}>Home</button>
-
-            {/* <div>
-              <button
-                className="mobile-sea-trigger"
-                onClick={() => setMobileSeaOpen(v => !v)}
-              >
-                SEA
-                <ChevronDown
-                  size={15}
-                  className={`mobile-sea-chevron ${mobileSeaOpen ? 'mobile-sea-chevron--open' : ''}`}
-                />
-              </button>
-              {mobileSeaOpen && (
-                <div className="mobile-sea-submenu">
-                  {seaItems.map(item => (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      className="mobile-sea-link"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      <span className="mobile-sea-dot" />
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div> */}
             <button className="mobile-nav-btn" onClick={()=> scrollTo('domains')}>Domains</button>
             <button className="mobile-nav-btn" onClick={()=> scrollTo('research')}>Research &amp; Pilots</button>
             <button className="mobile-nav-btn" onClick={()=> scrollTo('advisors')}>Advisors</button>
             <button className="mobile-nav-btn" onClick={() => scrollTo('insights')}>Insights</button>
             <button className="mobile-nav-btn" onClick={() => scrollTo('contact')}>Contact</button>
-            
-
             <div className="mobile-menu__cta">
-              <button
-                onClick={() => { scrollTo('contact'); setMobileOpen(false) }}
-                className="btn btn-primary"
+              <button onClick={() => { scrollTo('contact'); setMobileOpen(false) }}
+                className="btn btn-collab"
                 style={{ width: '100%', justifyContent: 'center' }}
               >
                 Explore Collaboration

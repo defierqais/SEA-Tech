@@ -244,64 +244,6 @@ function FounderMessage() {
    SECTION — WHY SEA-TECH
 ══════════════════════════════════════ */
 
-// const whyCards = [
-//   {
-//     title: 'Sustainability-Driven Innovation',
-//     desc:  'Creating value through sustainability-focused solutions and emerging technologies.',
-//   },
-//   {
-//     title: 'Systems Thinking',
-//     desc:  'Addressing complex challenges across agriculture, energy and circular economy ecosystems.',
-//   },
-//   {
-//     title: 'Research-to-Field Translation',
-//     desc:  'Bridging scientific research with practical implementation and pilot deployment.',
-//   },
-//   {
-//     title: 'Industry–Academia Collaboration',
-//     desc:  'Connecting expertise, innovation and stakeholders to accelerate sustainable outcomes.',
-//   },
-//   {
-//     title: 'Circular Economy Expertise',
-//     desc:  'Transforming underutilized resources into productive environmental and economic value.',
-//   },
-//   {
-//     title: 'Operational Execution Capability',
-//     desc:  'Applying disciplined programme leadership and implementation experience to sustainability initiatives.',
-//   },
-// ]
-
-// function WhySeaTech() {
-//   return (
-//     <section className="section why">
-//       <div className="why__grid-overlay" />
-//       <div className="container">
-//         <FadeUp>
-//           <div className="why__header">
-//             <span className="tag">Our Differentiators</span>
-//             <h2 className="section-heading">Why SEA-Tech</h2>
-//             <p className="section-sub" style={{ margin: '10px auto 0' }}>
-//               Integrating sustainability, innovation and execution to create practical
-//               pathways from concept to impact.
-//             </p>
-//           </div>
-//         </FadeUp>
-
-//         <div className="why__cards">
-//           {whyCards.map((c, i) => (
-//             <FadeUp key={c.title} delay={i * 0.08}>
-//               <div className="why-card">
-//                 <div className="why-card__num">{String(i + 1).padStart(2, '0')}</div>
-//                 <div className="why-card__title">{c.title}</div>
-//                 <p className="why-card__desc">{c.desc}</p>
-//               </div>
-//             </FadeUp>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
 const whyCards = [
   {
     title: 'Sustainability-Driven Innovation',
@@ -383,355 +325,6 @@ function WhySeaTech() {
 }
 
 /* ══════════════════════════════════════
-   SECTION 2 — WHO WE ARE
-══════════════════════════════════════ */
-function WhoWeAreSection() {
-  return (
-    <section className="section who">
-      <div className="who__bg-image" />
-      <div className="who__bg-accent" />
-      <div className="container">
-        <div className="who__grid">
-          <FadeUp>
-            <div className="who__left-sticky">
-              <span className="tag">Who We Are</span>
-              <h2 className="section-heading who__heading">
-                Building Applied <br />Sustainability<br />Systems
-              </h2>
-              <div className="who__divider" />
-            </div>
-          </FadeUp>
-
-          <FadeUp delay={0.14}>
-            <div>
-              <p className="who__para">
-                SEA-Tech Innovations LLP is a sustainability innovation and deployment platform focused on applied R&D, pilot systems, and scalable sustainability technologies.
-              </p>
-              <p className="who__para">
-                We operate at the intersection of sustainability, clean energy, advanced agriculture, industrial ecosystems, and strategic infrastructure through research-driven execution and collaborative innovation.
-              </p>
-              <p className="who__para">
-                Our approach integrates:
-              </p>
-
-              <div className="who__checklist">
-                {[
-                  'Research & Development', 'Systems Design',
-                  'Pilot Implementation', 'Commercialization',
-                  'Operational Execution', 'Collaborative Innovation',
-                ].map(item => (
-                  <div key={item} className="who__check-item">
-                    <CheckCircle2 size={16} color="#7FB069" style={{ flexShrink: 0 }} />
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </FadeUp>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-/* ══════════════════════════════════════
-   SECTION 2.5 — Advisors
-══════════════════════════════════════ */
-const advisors = [
-  {
-    id: 'rklal',
-    initials: 'RL',
-    name: 'Dr. R.K. Lal',
-    image: '/advisors/RK_Lal.jpg',
-    role: 'Strategic Advisor — Sustainable Agriculture & Biomass Valorisation',
-    bio: 'Senior scientist and plant genetics expert with nearly four decades of experience in medicinal and aromatic plant improvement, mutation breeding, sustainable bioresource systems and agricultural technologies. His work spans crop improvement, biomass systems, translational agricultural research and sustainable bioeconomy applications.',
-    linkedin: 'https://www.linkedin.com/in/raj-kishori-lal-35a48a156/',
-    expertise: [
-      'Medicinal & Aromatic Plants (MAP)',
-      'Plant Genetics & Breeding',
-      'Mutation Breeding',
-      'Sustainable Biomass Systems',
-      'Bioenergy Feedstock Development',
-      'Climate-Resilient Agriculture',
-      'Circular Bioeconomy Systems',
-      'Crop Improvement Technologies',
-      'Sustainable Agricultural Systems',
-      'Translational Agricultural Research',
-    ],
-    highlights: [
-      'Developed and released 67 commercial plant varieties',
-      'Led multiple genetic improvement programmes for medicinal and aromatic plants',
-      'Contributed to whole genome sequencing initiatives in Holy Basil',
-      'Holder/co-holder of multiple U.S. patents',
-      'Extensive contributions to sustainable agriculture and industrial bioresource applications',
-      'Recognized nationally for scientific innovation and agricultural research contributions',
-    ],
-    associations: [
-      'Former Chief Scientist, CSIR-CIMAP',
-      'Nearly 40 years of research and innovation experience',
-      'Author of 350+ scientific publications',
-      'Associated with multiple national and international scientific initiatives',
-      'Recipient of several awards and recognitions in agricultural biotechnology and plant sciences',
-    ],
-    relevance: [
-      'Sustainable agriculture systems',
-      'Biomass valorization',
-      'Bioenergy feedstock pathways',
-      'Climate-resilient agricultural innovation',
-      'Circular bioeconomy systems',
-      'Translational sustainability technologies',
-    ],
-  },
-  {
-  id: 'vdmendhulkar',
-  initials: 'VM',
-  name: 'Prof. (Dr.) Vijay D. Mendhulkar',
-  image: '/advisors/DrVijay_DM.jpg',
-  role: 'Strategic Advisor — Plant Biotechnology, Bioactive Systems & Sustainable Bioeconomy',
-  bio: 'Distinguished plant scientist, academic leader and researcher with over three decades of experience in plant sciences, biotechnology, cytogenetics, plant cell culture and nanobiotechnology. Former Professor and Head of the Department of Botany at the Institute of Science, Mumbai, Dr. Mendhulkar has contributed extensively to plant-based innovation, bioactive compounds, sustainable bioresource applications and translational research in agriculture and biotechnology.',
-  linkedin: 'https://www.linkedin.com/in/prof-vijay-d-mendhulkar-99083139/',
-  expertise: [
-    'Plant Biotechnology',
-    'Cytogenetics & Plant Genetics',
-    'Chemical Mutagenesis',
-    'Plant Cell Culture Technologies',
-    'Secondary Metabolites & Bioactive Compounds',
-    'Nanobiotechnology',
-    'In-Vitro Plant Systems',
-    'Sustainable Bioresource Applications',
-    'Translational Plant Science',
-    'Biofuel',
-  ],
-  highlights: [
-    'Former Professor & Head, Department of Botany, Institute of Science, Mumbai',
-    'Served as Registrar (Additional Charge), Dr. Homi Bhabha State University',
-    'Established advanced research infrastructure and instrumentation capabilities for plant science research',
-    'Guided multiple doctoral and postgraduate research programmes in Botany and Biotechnology',
-    'Recognized nationally as an academic leader, examiner, reviewer and research mentor',
-    'Recipient of several best presentation awards at national and international scientific conferences for research in biotechnology and nanobiotechnology',
-  ],
-  associations: [
-    'PhD in Plant Sciences from Karnataka University, Dharwad',
-    'Former Professor & Head, Institute of Science, Mumbai',
-    'Former Registrar, Dr. Homi Bhabha State University, Mumbai',
-    'Author of 74+ research publications and presenter at 60+ national and international scientific conferences',
-    'Research guide for doctoral programmes in Botany and Biotechnology',
-    'Associated with editorial boards, academic review panels and university research evaluation committees across India',
-  ],
-  relevance: [
-    'Biotechnology-enabled sustainability solutions',
-    'Biomass valorization pathways',
-    'Plant-based bioresource systems',
-    'Bioactive and high-value agricultural products',
-    'Circular bioeconomy initiatives',
-    'Translational research linking plant sciences to sustainable industrial applications',
-  ],
-},
-{
-  id: 'snmishra',
-  initials: 'SM',
-  name: 'Group Captain (Prof.) S.N. Mishra',
-  image: '/advisors/SNMishra.jpg',
-  role: 'Strategic Advisor — Climate Science, Weather Risk & Sustainability Systems',
-  bio: 'Former Director of Climate Sciences & Weather, Indian Air Force and Senior climate science and meteorology expert with over four decades of experience across climate risk assessment, extreme weather systems, sustainability strategy and operational forecasting in India and internationally. His work spans climate resilience, decarbonization pathways, infrastructure risk analysis and sustainability-linked strategic systems.',
-  linkedin: 'https://www.linkedin.com/in/sn-mishra/',
-  expertise: [
-    'Climate Science & Meteorology',
-    'Climate Risk Assessment',
-    'Extreme Weather Systems',
-    'Sustainability & Decarbonization',
-    'Net-Zero Pathways',
-    'Climate Resilience Planning',
-    'Infrastructure Risk Analysis',
-    'Environmental Forecasting',
-    'Strategic Weather Operations',
-    'Climate-linked Sustainability Systems',
-  ],
-  highlights: [
-    'Former Director of Climate Sciences & Weather, Indian Air Force',
-    'Contributed to national climate and extreme weather programmes under the Government of India',
-    'Associated with climate-related strategic studies in collaboration with national security institutions',
-    'Served with United Nations missions and international sustainability initiatives',
-    'Climate consultant and risk analyst for institutions including the World Bank and Asian Development Bank',
-    'Recognized for operational contributions in high-reliability strategic environments',
-  ],
-  associations: [
-    'PhD in Meteorology with specialization in severe flood forecasting and ensemble modelling',
-    'Visiting Professor at TERI School of Advanced Studies',
-    'Climate expert associated with Management Development Institute Gurgaon',
-    'Published extensively in climate science, meteorology and sustainability domains',
-    'Speaker and contributor to policy discussions on climate resilience and sustainability',
-  ],
-  relevance: [
-    'Climate resilience systems',
-    'Sustainability strategy',
-    'Environmental risk assessment',
-    'Decarbonization pathways',
-    'Climate-linked infrastructure planning',
-    'Resilience-driven sustainability frameworks',
-  ],
-},
-]
-
-
-function AdvisorsSection() {
-  const [selected, setSelected] = useState(null)
-
-  useEffect(() => {
-    if (selected) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [selected])
-
-  return (
-    <section id='advisors' className="section advisors">
-      <div className="container">
-        <FadeUp>
-          <div className="advisors__header">
-            <span className="tag">Advisory Board</span>
-            <h2 className="section-heading">Strategic Advisors</h2>
-            <p className="section-sub" style={{ margin: '10px auto 0' }}>
-              Domain experts guiding SEA-Tech's innovation across sustainability, energy,
-              agriculture, and strategic systems.
-            </p>
-          </div>
-        </FadeUp>
-
-        <div className="advisors__grid">
-          {advisors.map((a, i) => (
-            <FadeUp key={a.id} delay={i * 0.09}>
-              <div className="advisor-card">
-                <div className="advisor-card__avatar"><img src={a.image} alt="" /></div>
-                <div className="advisor-card__name">{a.name}</div>
-                <div className="advisor-card__role">{a.role}</div>
-                <p className="advisor-card__bio">{a.bio}</p>
-                <button
-                  className="advisor-card__btn"
-                  onClick={() => setSelected(a)}
-                >
-                  View Profile <ArrowRight size={12} />
-                </button>
-              </div>
-            </FadeUp>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Modal ── */}
-      {selected && (
-        <div className="advisor-modal-overlay" onClick={() => setSelected(null)}>
-          <div className="advisor-modal" onClick={e => e.stopPropagation()}>
-            {/* Close button */}
-            <div className="advisor-modal__close">
-              <button className="advisor-modal__close-btn" onClick={() => setSelected(null)}>
-                <X size={16} />
-              </button>
-            </div>
-
-            {/* Header */}
-            <div className="advisor-modal__header">
-              <div className="advisor-modal__avatar"><img src={selected.image} alt="loading.." /></div>
-              <div>
-                <div className="advisor-modal__name">{selected.name}</div>
-                <div className="advisor-modal__role">{selected.role}</div>
-                {selected.linkedin && (
-                  <a
-                    href={selected.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: 6,
-                      marginTop: 8,
-                      fontSize: 12,
-                      fontWeight: 600,
-                      color: '#0E5C5A',
-                      textDecoration: 'none',
-                    }}
-                  >
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                    LinkedIn Profile
-                  </a>
-                )}
-              </div>
-            </div>
-
-            {/* Body */}
-            <div className="advisor-modal__body">
-
-              {/* Areas of Expertise */}
-              <div>
-                <div className="advisor-modal__section-title">Areas of Expertise</div>
-                <div className="advisor-modal__tags">
-                  {selected.expertise.map(e => (
-                    <span key={e} className="advisor-modal__tag">{e}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Selected Impact Highlights */}
-              <div>
-                <div className="advisor-modal__section-title">Selected Impact Highlights</div>
-                <div className="advisor-modal__highlights">
-                  {selected.highlights.map(h => (
-                    <div key={h} className="advisor-modal__highlight-item">
-                      <span className="advisor-modal__highlight-dot" />
-                      {h}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Research & Institutional Associations */}
-              <div>
-                <div className="advisor-modal__section-title">
-                  Research &amp; Institutional Associations
-                </div>
-                <div className="advisor-modal__highlights">
-                  {selected.associations.map(a => (
-                    <div key={a} className="advisor-modal__highlight-item">
-                      <span className="advisor-modal__highlight-dot" />
-                      {a}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Strategic Relevance */}
-              <div>
-                <div className="advisor-modal__section-title">
-                  Strategic Relevance to SEA-Tech
-                </div>
-                <div className="advisor-modal__relevance">
-                  <div className="advisor-modal__highlights">
-                    {selected.relevance.map(r => (
-                      <div key={r} className="advisor-modal__highlight-item">
-                        <span className="advisor-modal__highlight-dot" />
-                        {r}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      )}
-    </section>
-  )
-}
-
-
-/* ══════════════════════════════════════
    SECTION 3 — CORE DOMAINS
 ══════════════════════════════════════ */
 const domains = [
@@ -768,7 +361,9 @@ function CoreDomainsSection() {
     <section id="domains" className="section domains">
 
       <div className="container">
-        <div className='domains__bg-image' />
+        {/* <div className='domains__bg-image' /> */}
+        {/* <div className="why__grid-overlay" /> */}
+
         <FadeUp>
           <div className="domains__header">
             <span className="tag">Innovation Domains</span>
@@ -997,193 +592,300 @@ function ResearchPilots() {
   )
 }
 
-
 /* ══════════════════════════════════════
-   SECTION 4 — RESEARCH TO DEPLOYMENT
+   SECTION — Advisors
 ══════════════════════════════════════ */
-const stages = [
-  { label: 'Research', icon: FlaskConical, desc: 'Applied R&D and scientific exploration' },
-  { label: 'Design', icon: Cog, desc: 'Systems architecture and technology design' },
-  { label: 'Pilot', icon: Microscope, desc: 'Prototype testing and field validation' },
-  { label: 'Operate', icon: Network, desc: 'Real-world operational deployment' },
-  { label: 'Scale', icon: Rocket, desc: 'Commercialization and scaled impact' },
+const advisors = [
+  {
+    id: 'rklal',
+    initials: 'RL',
+    name: 'Dr. R.K. Lal',
+    image: '/advisors/RK_Lal.jpg',
+    role: 'Strategic Advisor — Sustainable Agriculture & Biomass Valorisation',
+    bio: 'Senior scientist and plant genetics expert with nearly four decades of experience in medicinal and aromatic plant improvement, mutation breeding, sustainable bioresource systems and agricultural technologies. His work spans crop improvement, biomass systems, translational agricultural research and sustainable bioeconomy applications.',
+    linkedin: 'https://www.linkedin.com/in/raj-kishori-lal-35a48a156/',
+    expertise: [
+      'Medicinal & Aromatic Plants (MAP)',
+      'Plant Genetics & Breeding',
+      'Mutation Breeding',
+      'Sustainable Biomass Systems',
+      'Bioenergy Feedstock Development',
+      'Climate-Resilient Agriculture',
+      'Circular Bioeconomy Systems',
+      'Crop Improvement Technologies',
+      'Sustainable Agricultural Systems',
+      'Translational Agricultural Research',
+    ],
+    highlights: [
+      'Developed and released 67 commercial plant varieties',
+      'Led multiple genetic improvement programmes for medicinal and aromatic plants',
+      'Contributed to whole genome sequencing initiatives in Holy Basil',
+      'Holder/co-holder of multiple U.S. patents',
+      'Extensive contributions to sustainable agriculture and industrial bioresource applications',
+      'Recognized nationally for scientific innovation and agricultural research contributions',
+    ],
+    associations: [
+      'Former Chief Scientist, CSIR-CIMAP',
+      'Nearly 40 years of research and innovation experience',
+      'Author of 350+ scientific publications',
+      'Associated with multiple national and international scientific initiatives',
+      'Recipient of several awards and recognitions in agricultural biotechnology and plant sciences',
+    ],
+    relevance: [
+      'Sustainable agriculture systems',
+      'Biomass valorization',
+      'Bioenergy feedstock pathways',
+      'Climate-resilient agricultural innovation',
+      'Circular bioeconomy systems',
+      'Translational sustainability technologies',
+    ],
+  },
+  {
+  id: 'vdmendhulkar',
+  initials: 'VM',
+  name: 'Prof. (Dr.) Vijay D. Mendhulkar',
+  image: '/advisors/DrVijay_DM.jpg',
+  role: 'Strategic Advisor — Plant Biotechnology, Bioactive Systems & Sustainable Bioeconomy',
+  bio: 'Distinguished plant scientist, academic leader and researcher with over three decades of experience in plant sciences, biotechnology, cytogenetics, plant cell culture and nanobiotechnology. Former Professor and Head of the Department of Botany at the Institute of Science, Mumbai, Dr. Mendhulkar has contributed extensively to plant-based innovation, bioactive compounds, sustainable bioresource applications and translational research in agriculture and biotechnology.',
+  linkedin: 'https://www.linkedin.com/in/prof-vijay-d-mendhulkar-99083139/',
+  expertise: [
+    'Plant Biotechnology',
+    'Cytogenetics & Plant Genetics',
+    'Chemical Mutagenesis',
+    'Plant Cell Culture Technologies',
+    'Secondary Metabolites & Bioactive Compounds',
+    'Nanobiotechnology',
+    'In-Vitro Plant Systems',
+    'Sustainable Bioresource Applications',
+    'Translational Plant Science',
+    'Biofuel',
+  ],
+  highlights: [
+    'Former Professor & Head, Department of Botany, Institute of Science, Mumbai',
+    'Served as Registrar (Additional Charge), Dr. Homi Bhabha State University',
+    'Established advanced research infrastructure and instrumentation capabilities for plant science research',
+    'Guided multiple doctoral and postgraduate research programmes in Botany and Biotechnology',
+    'Recognized nationally as an academic leader, examiner, reviewer and research mentor',
+    'Recipient of several best presentation awards at national and international scientific conferences for research in biotechnology and nanobiotechnology',
+  ],
+  associations: [
+    'PhD in Plant Sciences from Karnataka University, Dharwad',
+    'Former Professor & Head, Institute of Science, Mumbai',
+    'Former Registrar, Dr. Homi Bhabha State University, Mumbai',
+    'Author of 74+ research publications and presenter at 60+ national and international scientific conferences',
+    'Research guide for doctoral programmes in Botany and Biotechnology',
+    'Associated with editorial boards, academic review panels and university research evaluation committees across India',
+  ],
+  relevance: [
+    'Biotechnology-enabled sustainability solutions',
+    'Biomass valorization pathways',
+    'Plant-based bioresource systems',
+    'Bioactive and high-value agricultural products',
+    'Circular bioeconomy initiatives',
+    'Translational research linking plant sciences to sustainable industrial applications',
+  ],
+},
+{
+  id: 'snmishra',
+  initials: 'SM',
+  name: 'Group Captain (Prof.) S.N. Mishra',
+  image: '/advisors/SNMishra.jpg',
+  role: 'Strategic Advisor — Climate Science, Weather Risk & Sustainability Systems',
+  bio: 'Former Director of Climate Sciences & Weather, Indian Air Force and Senior climate science and meteorology expert with over four decades of experience across climate risk assessment, extreme weather systems, sustainability strategy and operational forecasting in India and internationally. His work spans climate resilience, decarbonization pathways, infrastructure risk analysis and sustainability-linked strategic systems.',
+  linkedin: 'https://www.linkedin.com/in/sn-mishra/',
+  expertise: [
+    'Climate Science & Meteorology',
+    'Climate Risk Assessment',
+    'Extreme Weather Systems',
+    'Sustainability & Decarbonization',
+    'Net-Zero Pathways',
+    'Climate Resilience Planning',
+    'Infrastructure Risk Analysis',
+    'Environmental Forecasting',
+    'Strategic Weather Operations',
+    'Climate-linked Sustainability Systems',
+  ],
+  highlights: [
+    'Former Director of Climate Sciences & Weather, Indian Air Force',
+    'Contributed to national climate and extreme weather programmes under the Government of India',
+    'Associated with climate-related strategic studies in collaboration with national security institutions',
+    'Served with United Nations missions and international sustainability initiatives',
+    'Climate consultant and risk analyst for institutions including the World Bank and Asian Development Bank',
+    'Recognized for operational contributions in high-reliability strategic environments',
+  ],
+  associations: [
+    'PhD in Meteorology with specialization in severe flood forecasting and ensemble modelling',
+    'Visiting Professor at TERI School of Advanced Studies',
+    'Climate expert associated with Management Development Institute Gurgaon',
+    'Published extensively in climate science, meteorology and sustainability domains',
+    'Speaker and contributor to policy discussions on climate resilience and sustainability',
+  ],
+  relevance: [
+    'Climate resilience systems',
+    'Sustainability strategy',
+    'Environmental risk assessment',
+    'Decarbonization pathways',
+    'Climate-linked infrastructure planning',
+    'Resilience-driven sustainability frameworks',
+  ],
+},
 ]
 
-
-function ResearchDeploySection() {
-  const [ref, visible] = useInView(0.1)
-  const [active, setActive] = useState(0)
+function AdvisorsSection() {
+  const [selected, setSelected] = useState(null)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActive(prev => (prev + 1) % stages.length)
-    }, 1500)
-    return () => clearInterval(interval)
-  }, [])
+    if (selected) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [selected])
 
   return (
-    <section className="section pipeline">
-      <div className="pipeline__grid-overlay" />
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+    <section id='advisors' className="section advisors">
+      <div className="container">
         <FadeUp>
-          <div className="pipeline__header">
-            <span className="tag">Our Model</span>
-            <h2 className="section-heading light">From Research to Deployment</h2>
-            <p className="section-sub light" style={{ margin: '10px auto 0' }}>
-              SEA-Tech Innovations LLP bridges the gap between scientific innovation and deployable sustainability systems.
+          <div className="advisors__header">
+            <span className="tag">Advisory Board</span>
+            <h2 className="section-heading">Strategic Advisors</h2>
+            <p className="section-sub" style={{ margin: '10px auto 0' }}>
+              Domain experts guiding SEA-Tech's innovation across sustainability, energy,
+              agriculture, and strategic systems.
             </p>
           </div>
         </FadeUp>
 
-        <div ref={ref} className="pipeline__stages">
-          {stages.map((s, i) => {
-            const Icon = s.icon
-            const isActive = active === i
-            return (
-              <div
-                key={s.label}
-                className="pipeline__stage"
-                style={{
-                  opacity: visible ? 1 : 0,
-                  transform: visible ? 'translateY(0)' : 'translateY(22px)',
-                  transition: `all 0.6s ease ${i * 0.11}s`,
-                }}
-              >
-                <div
-                  className={`pipeline__stage-card ${isActive ? 'pipeline__stage-card--active' : ''}`}
-                // onMouseEnter={() => setActive(i)}
-                // onMouseLeave={() => setActive(null)}
+        <div className="advisors__grid">
+          {advisors.map((a, i) => (
+            <FadeUp key={a.id} delay={i * 0.09}>
+              <div className="advisor-card">
+                <div className="advisor-card__avatar"><img src={a.image} alt="" /></div>
+                <div className="advisor-card__name">{a.name}</div>
+                <div className="advisor-card__role">{a.role}</div>
+                <p className="advisor-card__bio">{a.bio}</p>
+                <button
+                  className="advisor-card__btn"
+                  onClick={() => setSelected(a)}
                 >
-                  <div
-                    className="pipeline__stage-icon-wrap"
+                  View Profile <ArrowRight size={12} />
+                </button>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Modal ── */}
+      {selected && (
+        <div className="advisor-modal-overlay" onClick={() => setSelected(null)}>
+          <div className="advisor-modal" onClick={e => e.stopPropagation()}>
+            {/* Close button */}
+            <div className="advisor-modal__close">
+              <button className="advisor-modal__close-btn" onClick={() => setSelected(null)}>
+                <X size={16} />
+              </button>
+            </div>
+
+            {/* Header */}
+            <div className="advisor-modal__header">
+              <div className="advisor-modal__avatar"><img src={selected.image} alt="loading.." /></div>
+              <div>
+                <div className="advisor-modal__name">{selected.name}</div>
+                <div className="advisor-modal__role">{selected.role}</div>
+                {selected.linkedin && (
+                  <a
+                    href={selected.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
-                      background: isActive
-                        ? 'rgba(255,255,255,0.2)'
-                        : 'rgba(127,176,105,0.14)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      marginTop: 8,
+                      fontSize: 12,
+                      fontWeight: 600,
+                      color: '#0E5C5A',
+                      textDecoration: 'none',
                     }}
                   >
-                    <s.icon size={20} color={isActive ? '#fff' : '#7FB069'} />
-                  </div>
-                  <div className="pipeline__stage-num">
-                    {String(i + 1).padStart(2, '0')}
-                  </div>
-                  <div className="pipeline__stage-label">{s.label}</div>
-                  <div className="pipeline__stage-desc">{s.desc}</div>
-                </div>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn Profile
+                  </a>
+                )}
+              </div>
+            </div>
 
+            {/* Body */}
+            <div className="advisor-modal__body">
+
+              {/* Areas of Expertise */}
+              <div>
+                <div className="advisor-modal__section-title">Areas of Expertise</div>
+                <div className="advisor-modal__tags">
+                  {selected.expertise.map(e => (
+                    <span key={e} className="advisor-modal__tag">{e}</span>
+                  ))}
+                </div>
               </div>
 
-            )
-          })}
-        </div>
+              {/* Selected Impact Highlights */}
+              <div>
+                <div className="advisor-modal__section-title">Selected Impact Highlights</div>
+                <div className="advisor-modal__highlights">
+                  {selected.highlights.map(h => (
+                    <div key={h} className="advisor-modal__highlight-item">
+                      <span className="advisor-modal__highlight-dot" />
+                      {h}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-        {/* <div className="pipeline__flow">
-          {stages.map((s, i) => (
-            <div key={s.label} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span className="pipeline__flow-label">{s.label}</span>
-              {i < stages.length - 1 && (
-                <ArrowRight size={13} color="rgba(127,176,105,0.45)" />
-              )}
+              {/* Research & Institutional Associations */}
+              <div>
+                <div className="advisor-modal__section-title">
+                  Research &amp; Institutional Associations
+                </div>
+                <div className="advisor-modal__highlights">
+                  {selected.associations.map(a => (
+                    <div key={a} className="advisor-modal__highlight-item">
+                      <span className="advisor-modal__highlight-dot" />
+                      {a}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Strategic Relevance */}
+              <div>
+                <div className="advisor-modal__section-title">
+                  Strategic Relevance to SEA-Tech
+                </div>
+                <div className="advisor-modal__relevance">
+                  <div className="advisor-modal__highlights">
+                    {selected.relevance.map(r => (
+                      <div key={r} className="advisor-modal__highlight-item">
+                        <span className="advisor-modal__highlight-dot" />
+                        {r}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
-          ))}
-        </div> */}
-      </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
-
-/* ══════════════════════════════════════
-   SECTION 5 — SOLUTIONS
-══════════════════════════════════════ */
-// const solutions = [
-//   {
-//     title: 'Agri-Waste to Energy Systems',
-//     desc: 'Integrated pathways for converting agricultural residues into scalable energy and fuel systems through biomass conversion, gasification, and pyrolysis.',
-//     tags: ['Biomass', 'Bioenergy', 'Waste Valorization'],
-//     accent: '#0B3D2E',
-//   },
-//   {
-//     title: 'Sustainable Fuel Ecosystems',
-//     desc: 'Research-driven systems for sustainable aviation fuel, biofuels, renewable fuel integration, and low-carbon energy pathways for strategic sectors.',
-//     tags: ['SAF', 'Biofuels', 'Renewable Fuels'],
-//     accent: '#0E5C5A',
-//   },
-//   {
-//     title: 'Circular Industrial Systems',
-//     desc: 'Resource optimization, waste valorization, circular logistics, and sustainable industrial systems designed for real-world operational deployment.',
-//     tags: ['Circular Economy', 'Waste-to-Value', 'Industrial'],
-//     accent: '#334E68',
-//   },
-//   {
-//     title: 'Climate-Smart Agriculture',
-//     desc: 'Advanced agriculture systems integrating resilience, resource efficiency, soil health, agri-energy integration, and regenerative farming approaches.',
-//     tags: ['Climate Resilience', 'Soil Carbon', 'Precision Ag'],
-//     accent: '#2d6a4f',
-//   },
-//   {
-//     title: 'Strategic Sustainability Systems',
-//     desc: 'Sustainable infrastructure and resilient systems for advanced operational environments, remote energy security, and resource-efficient strategic operations.',
-//     tags: ['Energy Security', 'Remote Systems', 'Infrastructure'],
-//     accent: '#1a4a6e',
-//   },
-// ]
-
-// function SolutionsSection() {
-//   return (
-//     <section className="section solutions">
-//       <div className="container">
-//         <div className="solutions__bg-image" />
-//         <FadeUp>
-//           <div style={{ marginBottom: 52 }}>
-//             <span className="tag">Applied Solutions</span>
-//             <h2 className="section-heading">Applied Sustainability Pathways</h2>
-//             <p className="section-sub">
-//               Real-world sustainability systems built for deployment, scale, and long-term impact.
-//             </p>
-//           </div>
-//         </FadeUp>
-
-//         <div className="solutions__list">
-//           {solutions.map((s, i) => (
-//             <FadeUp key={s.title} delay={i * 0.07}>
-//               <div className="solution-card">
-//                 <div
-//                   className="solution-card__band"
-//                   style={{
-//                     background: `linear-gradient(135deg, ${s.accent}, ${s.accent}cc)`,
-//                   }}
-//                 >
-//                   <span className="solution-card__num">
-//                     {String(i + 1).padStart(2, '0')}
-//                   </span>
-//                   <h3 className="solution-card__title">{s.title}</h3>
-//                 </div>
-//                 <div className="solution-card__body">
-//                   <p className="solution-card__desc">{s.desc}</p>
-//                   <div className="solution-card__tags">
-//                     {s.tags.map(t => (
-//                       <span
-//                         key={t}
-//                         className="solution-tag"
-//                         style={{
-//                           background: `${s.accent}12`,
-//                           color: s.accent,
-//                           border: `1px solid ${s.accent}30`,
-//                         }}
-//                       >
-//                         {t}
-//                       </span>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-//             </FadeUp>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
 
 /* ══════════════════════════════════════
    SECTION 6 — COLLABORATION ECOSYSTEM
@@ -1518,78 +1220,6 @@ function InsightsPerspectives() {
           </div>
         </div>
       )}
-    </section>
-  )
-}
-
-/* ══════════════════════════════════════
-   SECTION 8 — INSIGHTS
-══════════════════════════════════════ */
-const articles = [
-  { cat: 'Sustainability', title: 'Circular Economy Systems: From Theory to Deployment', summary: 'How circular economy principles are being operationalized into real industrial sustainability systems.' },
-  { cat: 'Energy', title: 'Sustainable Aviation Fuel Pathways and Scalability', summary: 'Research directions and pilot pathways shaping the future of sustainable aviation fuel ecosystems.' },
-  { cat: 'Agriculture', title: 'Climate-Smart Agriculture and Soil Carbon Systems', summary: 'Integrating soil regeneration, carbon farming, and agri-energy systems for climate-resilient agriculture.' },
-  { cat: 'Circular Systems', title: 'Waste Valorization in Industrial Ecosystems', summary: 'Advanced approaches to transforming industrial waste streams into resource and energy value chains.' },
-  { cat: 'Strategic', title: 'Resilient Sustainability Systems for Remote Operations', summary: 'Designing sustainability-driven systems for energy security, resource efficiency, and field deployability.' },
-  { cat: 'Energy', title: 'Green Hydrogen and Bioenergy Integration Pathways', summary: 'Convergence of green hydrogen production with bioenergy systems as future energy ecosystem components.' },
-]
-
-const catColors = {
-  Sustainability: '#0B3D2E',
-  Energy: '#0E5C5A',
-  Agriculture: '#2d6a4f',
-  'Circular Systems': '#334E68',
-  Strategic: '#1a4a6e',
-}
-
-function InsightsSection() {
-  return (
-    <section id="insights" className="section insights">
-      <div className="container">
-        <div className='insights__bg-image' />
-        <FadeUp>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16, marginBottom: 44 }}>
-            <div>
-              <span className="tag">Thought Leadership</span>
-              <h2 className="section-heading">Insights &amp; Perspectives</h2>
-              <p className="section-sub">
-                Perspectives on sustainability, energy systems, agriculture innovation, circular
-                ecosystems, and strategic infrastructure.
-              </p>
-            </div>
-          </div>
-        </FadeUp>
-
-        <div className="insights__grid">
-          {articles.map((a, i) => {
-            const color = catColors[a.cat] || '#0B3D2E'
-            return (
-              <FadeUp key={a.title} delay={i * 0.06}>
-                <div className="insight-card">
-                  <div className="insight-card__meta">
-                    <span
-                      className="insight-card__cat"
-                      style={{
-                        color,
-                        background: `${color}10`,
-                        border: `1px solid ${color}25`,
-                      }}
-                    >
-                      {a.cat}
-                    </span>
-                    <span className="insight-card__type">Perspective</span>
-                  </div>
-                  <h3 className="insight-card__title">{a.title}</h3>
-                  <p className="insight-card__summary">{a.summary}</p>
-                  {/* <div className="insight-card__read" style={{ color }}>
-                    Read Perspective <ArrowRight size={12} />
-                  </div> */}
-                </div>
-              </FadeUp>
-            )
-          })}
-        </div>
-      </div>
     </section>
   )
 }
