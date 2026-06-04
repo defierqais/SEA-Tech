@@ -75,6 +75,17 @@ export default function Navbar() {
     }
   }
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileOpen])
+
 // const scrollTo = (id) => {
 //   setMobileOpen(false)
   
