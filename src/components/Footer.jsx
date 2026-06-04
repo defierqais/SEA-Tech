@@ -26,13 +26,13 @@ export default function Footer() {
 
           <div className="brand">
             <div className="brand-logo-row">
-              <img src="/assets/SEA-Tech-logo.png" alt="SEA-Tech" className="footer-logo" />
+              <img src="/assets/SEAFooterLogo.png" alt="SEA-Tech" className="footer-logo" />
             </div>
-            <p className="brand-tagline">At The Nexus of Sustainability, Energy, and Agriculture</p>
+            <p className="brand-tagline">At The Nexus of Sustainability, <span id='footer-energy'>Energy</span>, and Agriculture</p>
           </div>
 
           <div className="footer-center">
-            <span>Sustainability · <span id='footer-energy'>Energy</span> · Agriculture</span>
+            <span>· Biomass Valorization · Sustainable Fuel Pathways ·<br />· Climate-Smart Agriculture · Soil Carbon Systems ·<br />· Circular Bioeconomy ·</span>
           </div>
 
           <div className="location">

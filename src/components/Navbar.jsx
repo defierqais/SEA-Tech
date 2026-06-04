@@ -126,12 +126,12 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${transparent ? 'navbar--transparent' : 'navbar--scrolled'} ${visible ? 'navbar--visible' : 'navbar--hidden'} ${mobileOpen ? 'mobile-menu--open' : ''}` }>
-        <div className="container">
+        <div className="container" style={{width:"100%", display: "flex", alignItems: "center"}}>
           <div className="navbar__inner">
 
             {/* Logo */}
             <Link to="/" className="navbar__logo">
-              <img src="./assets/SEA-Tech-logo.png" alt="SEA-Tech Innovations LLP" />
+              <img src="/assets/SEALogo.png" alt="SEA-Tech Innovations LLP" />
             </Link>
 
             {/* Desktop Nav */}

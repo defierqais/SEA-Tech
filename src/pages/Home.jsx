@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
 import '../styles/Home.css'
+import TopologyBackground from '../components/TopologyComponent'
 
 /* ── Intersection observer hook ── */
 function useInView(threshold = 0.12) {
@@ -49,13 +50,18 @@ export default function Home() {
   return (
     <main>
       <HeroSection scrollTo={scrollTo} />
-      <FounderMessage />
-      <WhySeaTech />
-      <CoreDomainsSection />
-      <ResearchPilots />
-      <AdvisorsSection />
-      <CollabEcosystem scrollTo={scrollTo} />
-      <InsightsPerspectives /> 
+      <div id="topology-zone" style={{ position: 'relative', overflow: 'hidden' }}>
+        <TopologyBackground targetId="topology-zone" />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <FounderMessage />
+          <WhySeaTech />
+          <CoreDomainsSection />
+          <ResearchPilots />
+          <AdvisorsSection />
+          <CollabEcosystem scrollTo={scrollTo} />
+          <InsightsPerspectives /> 
+          </div>
+      </div>
       {/* <ProjectsPilots /> */}
       {/* <InsightsSection /> */}
       <ContactSection />
@@ -74,6 +80,16 @@ function HeroSection({ scrollTo }) {
     const t = setTimeout(() => setLoaded(true), 80)
     return () => clearTimeout(t)
   }, [])
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
+
+  useEffect(() => {
+    const fn = () => setIsMobile(window.innerWidth <= 600)
+    window.addEventListener('resize', fn)
+    return () => window.removeEventListener('resize', fn)
+  }, [])
+
+
   return (
     <section id="hero" className={`hero ${loaded ? 'hero--loaded' : ''}`}>
 
@@ -86,13 +102,13 @@ function HeroSection({ scrollTo }) {
       <div className="container">
         <div className="hero__content">
           <div className="hero__cta-row">
-            <button onClick={() => scrollTo('contact')} className="btn btn-outline">
+            <button onClick={() => scrollTo('contact')} className={isMobile ? 'btn btn-outline' : 'btn btn-primary'}>
               Explore Collaboration <ArrowRight size={15} />
             </button>
-            <button onClick={() => scrollTo('domains')} className="btn btn-outline">
+            <button onClick={() => scrollTo('domains')} className={isMobile ? 'btn btn-outline' : 'btn btn-primary'}>
               View Innovation Domains
             </button>
-            <button onClick={() => scrollTo('research')} className="btn btn-outline">
+            <button onClick={() => scrollTo('research')} className={isMobile ? 'btn btn-outline' : 'btn btn-primary'}>
               View Research Innovations
             </button>
           </div>
@@ -112,8 +128,8 @@ function FounderMessage() {
       <div className="container">
         <FadeUp>
           <div style={{ marginBottom: 52 }}>
-            <span className="tag">From the Founder</span>
-            <h2 className="section-heading">Founder's Message</h2>
+            <span className="tag">Leading with purpose</span>
+            <h2 className="section-heading">From the Founder</h2>
           </div>
         </FadeUp>
 
@@ -123,18 +139,12 @@ function FounderMessage() {
           <FadeUp delay={0.1}>
             <div className="founder__left">
               <div className="founder__photo-wrap">
-                {/* Replace src with actual image path when available */}
                 <div className="founder__photo-placeholder">
-                  {/* <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7FB069" strokeWidth="1.5">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    <circle cx="12" cy="7" r="4"/>
-                  </svg> */}
-                  {/* <span>Photo coming soon</span> */}
                   <img src="/advisors/DrHena.jpg" alt="Dr. Hena H" className='founder__photo' />
                 </div>
-                <div className="founder__photo-accent">
+                {/* <div className="founder__photo-accent">
                   <Leaf size={28} color="#fff" />
-                </div>
+                </div> */}
               </div>
 
               <div>
@@ -280,7 +290,7 @@ const whyCards = [
 function WhySeaTech() {
   return (
     <section className="section why">
-      <div className="why__grid-overlay" />
+      {/* <div className="why__grid-overlay" /> */}
       <div className="container">
         <FadeUp>
           <div className="why__header">
