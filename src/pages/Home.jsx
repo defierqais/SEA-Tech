@@ -4,7 +4,7 @@ import {
   ArrowRight, Leaf, Zap, Sprout, Shield,
   Cog, Rocket, Building2, GraduationCap,
   Microscope, Network, CheckCircle2, Phone, Mail, Send,
-  FlaskConical, Globe, X,  Plane, Wheat, RefreshCw, GitBranchPlus
+  FlaskConical, Globe, X, Plane, Wheat, RefreshCw, GitBranchPlus
 } from 'lucide-react'
 import { FaWhatsapp } from 'react-icons/fa'
 import '../styles/Home.css'
@@ -59,8 +59,8 @@ export default function Home() {
           <ResearchPilots />
           <AdvisorsSection />
           <CollabEcosystem scrollTo={scrollTo} />
-          <InsightsPerspectives /> 
-          </div>
+          <InsightsPerspectives />
+        </div>
       </div>
       {/* <ProjectsPilots /> */}
       {/* <InsightsSection /> */}
@@ -163,7 +163,7 @@ function FounderMessage() {
                   className="founder__linkedin"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                   LinkedIn Profile
                 </a>
@@ -257,33 +257,33 @@ function FounderMessage() {
 const whyCards = [
   {
     title: 'Sustainability-Driven Innovation',
-    desc:  'Creating value through sustainability-focused solutions and emerging technologies.',
-    bg:    '#d4ead9',
+    desc: 'Creating value through sustainability-focused solutions and emerging technologies.',
+    bg: '#d4ead9',
   },
   {
     title: 'Systems Thinking',
-    desc:  'Addressing complex challenges across agriculture, energy and circular economy ecosystems.',
-    bg:    '#cde6e5',
+    desc: 'Addressing complex challenges across agriculture, energy and circular economy ecosystems.',
+    bg: '#cde6e5',
   },
   {
     title: 'Research-to-Field Translation',
-    desc:  'Bridging scientific research with practical implementation and pilot deployment.',
-    bg:    '#cddce8',
+    desc: 'Bridging scientific research with practical implementation and pilot deployment.',
+    bg: '#cddce8',
   },
   {
     title: 'Industry–Academia Collaboration',
-    desc:  'Connecting expertise, innovation and stakeholders to accelerate sustainable outcomes.',
-    bg:    '#d6e8cc',
+    desc: 'Connecting expertise, innovation and stakeholders to accelerate sustainable outcomes.',
+    bg: '#d6e8cc',
   },
   {
     title: 'Circular Economy Expertise',
-    desc:  'Transforming underutilized resources into productive environmental and economic value.',
-    bg:    '#ddd4ee',
+    desc: 'Transforming underutilized resources into productive environmental and economic value.',
+    bg: '#ddd4ee',
   },
   {
     title: 'Operational Execution Capability',
-    desc:  'Applying disciplined programme leadership and implementation experience to sustainability initiatives.',
-    bg:    '#cde0e8',
+    desc: 'Applying disciplined programme leadership and implementation experience to sustainability initiatives.',
+    bg: '#cde0e8',
   },
 ]
 
@@ -664,94 +664,94 @@ const advisors = [
     ],
   },
   {
-  id: 'vdmendhulkar',
-  initials: 'VM',
-  name: 'Prof. (Dr.) Vijay D. Mendhulkar',
-  image: '/advisors/DrVijay_DM.jpg',
-  role: 'Strategic Advisor — Plant Biotechnology, Bioactive Systems & Sustainable Bioeconomy',
-  bio: 'Distinguished plant scientist, academic leader and researcher with over three decades of experience in plant sciences, biotechnology, cytogenetics, and plant cell culture. Former Professor and HoD Botany at the Institute of Science, Mumbai, Dr. Mendhulkar has contributed extensively to plant-based innovation, sustainable bioresource applications and translational research in plant biotechnology.',
-  linkedin: 'https://www.linkedin.com/in/prof-vijay-d-mendhulkar-99083139/',
-  expertise: [
-    'Plant Biotechnology',
-    'Cytogenetics & Plant Genetics',
-    'Chemical Mutagenesis',
-    'Plant Cell Culture Technologies',
-    'Secondary Metabolites & Bioactive Compounds',
-    'Nanobiotechnology',
-    'In-Vitro Plant Systems',
-    'Sustainable Bioresource Applications',
-    'Translational Plant Science',
-    'Biofuel',
-  ],
-  highlights: [
-    'Former Professor & Head, Department of Botany, Institute of Science, Mumbai',
-    'Served as Registrar (Additional Charge), Dr. Homi Bhabha State University',
-    'Established advanced research infrastructure and instrumentation capabilities for plant science research',
-    'Guided multiple doctoral and postgraduate research programmes in Botany and Biotechnology',
-    'Recognized nationally as an academic leader, examiner, reviewer and research mentor',
-    'Recipient of several best presentation awards at national and international scientific conferences for research in biotechnology and nanobiotechnology',
-  ],
-  associations: [
-    'PhD in Plant Sciences from Karnataka University, Dharwad',
-    'Former Professor & Head, Institute of Science, Mumbai',
-    'Former Registrar, Dr. Homi Bhabha State University, Mumbai',
-    'Author of 74+ research publications and presenter at 60+ national and international scientific conferences',
-    'Research guide for doctoral programmes in Botany and Biotechnology',
-    'Associated with editorial boards, academic review panels and university research evaluation committees across India',
-  ],
-  relevance: [
-    'Biotechnology-enabled sustainability solutions',
-    'Biomass valorization pathways',
-    'Plant-based bioresource systems',
-    'Bioactive and high-value agricultural products',
-    'Circular bioeconomy initiatives',
-    'Translational research linking plant sciences to sustainable industrial applications',
-  ],
-},
-{
-  id: 'snmishra',
-  initials: 'SM',
-  name: 'Group Captain (Prof.) S.N. Mishra',
-  image: '/advisors/SNMishra.jpg',
-  role: 'Strategic Advisor — Climate Science, Weather Risk & Sustainability Systems',
-  bio: 'Former Director of Climate Sciences & Weather, Indian Air Force and Senior climate science and meteorology expert with over four decades of experience across climate risk assessment, extreme weather systems, sustainability strategy and operational forecasting in India and internationally. His work spans climate resilience, decarbonization pathways, infrastructure risk analysis and sustainability-linked strategic systems.',
-  linkedin: 'https://www.linkedin.com/in/sn-mishra/',
-  expertise: [
-    'Climate Science & Meteorology',
-    'Climate Risk Assessment',
-    'Extreme Weather Systems',
-    'Sustainability & Decarbonization',
-    'Net-Zero Pathways',
-    'Climate Resilience Planning',
-    'Infrastructure Risk Analysis',
-    'Environmental Forecasting',
-    'Strategic Weather Operations',
-    'Climate-linked Sustainability Systems',
-  ],
-  highlights: [
-    'Former Director of Climate Sciences & Weather, Indian Air Force',
-    'Contributed to national climate and extreme weather programmes under the Government of India',
-    'Associated with climate-related strategic studies in collaboration with national security institutions',
-    'Served with United Nations missions and international sustainability initiatives',
-    'Climate consultant and risk analyst for institutions including the World Bank and Asian Development Bank',
-    'Recognized for operational contributions in high-reliability strategic environments',
-  ],
-  associations: [
-    'PhD in Meteorology with specialization in severe flood forecasting and ensemble modelling',
-    'Visiting Professor at TERI School of Advanced Studies',
-    'Climate expert associated with Management Development Institute Gurgaon',
-    'Published extensively in climate science, meteorology and sustainability domains',
-    'Speaker and contributor to policy discussions on climate resilience and sustainability',
-  ],
-  relevance: [
-    'Climate resilience systems',
-    'Sustainability strategy',
-    'Environmental risk assessment',
-    'Decarbonization pathways',
-    'Climate-linked infrastructure planning',
-    'Resilience-driven sustainability frameworks',
-  ],
-},
+    id: 'vdmendhulkar',
+    initials: 'VM',
+    name: 'Prof. (Dr.) Vijay D. Mendhulkar',
+    image: '/advisors/DrVijay_DM.jpg',
+    role: 'Strategic Advisor — Plant Biotechnology, Bioactive Systems & Sustainable Bioeconomy',
+    bio: 'Distinguished plant scientist, academic leader and researcher with over three decades of experience in plant sciences, biotechnology, cytogenetics, and plant cell culture. Former Professor and HoD Botany at the Institute of Science, Mumbai, Dr. Mendhulkar has contributed extensively to plant-based innovation, sustainable bioresource applications and translational research in plant biotechnology.',
+    linkedin: 'https://www.linkedin.com/in/prof-vijay-d-mendhulkar-99083139/',
+    expertise: [
+      'Plant Biotechnology',
+      'Cytogenetics & Plant Genetics',
+      'Chemical Mutagenesis',
+      'Plant Cell Culture Technologies',
+      'Secondary Metabolites & Bioactive Compounds',
+      'Nanobiotechnology',
+      'In-Vitro Plant Systems',
+      'Sustainable Bioresource Applications',
+      'Translational Plant Science',
+      'Biofuel',
+    ],
+    highlights: [
+      'Former Professor & Head, Department of Botany, Institute of Science, Mumbai',
+      'Served as Registrar (Additional Charge), Dr. Homi Bhabha State University',
+      'Established advanced research infrastructure and instrumentation capabilities for plant science research',
+      'Guided multiple doctoral and postgraduate research programmes in Botany and Biotechnology',
+      'Recognized nationally as an academic leader, examiner, reviewer and research mentor',
+      'Recipient of several best presentation awards at national and international scientific conferences for research in biotechnology and nanobiotechnology',
+    ],
+    associations: [
+      'PhD in Plant Sciences from Karnataka University, Dharwad',
+      'Former Professor & Head, Institute of Science, Mumbai',
+      'Former Registrar, Dr. Homi Bhabha State University, Mumbai',
+      'Author of 74+ research publications and presenter at 60+ national and international scientific conferences',
+      'Research guide for doctoral programmes in Botany and Biotechnology',
+      'Associated with editorial boards, academic review panels and university research evaluation committees across India',
+    ],
+    relevance: [
+      'Biotechnology-enabled sustainability solutions',
+      'Biomass valorization pathways',
+      'Plant-based bioresource systems',
+      'Bioactive and high-value agricultural products',
+      'Circular bioeconomy initiatives',
+      'Translational research linking plant sciences to sustainable industrial applications',
+    ],
+  },
+  {
+    id: 'snmishra',
+    initials: 'SM',
+    name: 'Group Captain (Prof.) S.N. Mishra',
+    image: '/advisors/SNMishra.jpg',
+    role: 'Strategic Advisor — Climate Science, Weather Risk & Sustainability Systems',
+    bio: 'Former Director of Climate Sciences & Weather, Indian Air Force and Senior climate science and meteorology expert with over four decades of experience across climate risk assessment, extreme weather systems, sustainability strategy and operational forecasting in India and internationally. His work spans climate resilience, decarbonization pathways, infrastructure risk analysis and sustainability-linked strategic systems.',
+    linkedin: 'https://www.linkedin.com/in/sn-mishra/',
+    expertise: [
+      'Climate Science & Meteorology',
+      'Climate Risk Assessment',
+      'Extreme Weather Systems',
+      'Sustainability & Decarbonization',
+      'Net-Zero Pathways',
+      'Climate Resilience Planning',
+      'Infrastructure Risk Analysis',
+      'Environmental Forecasting',
+      'Strategic Weather Operations',
+      'Climate-linked Sustainability Systems',
+    ],
+    highlights: [
+      'Former Director of Climate Sciences & Weather, Indian Air Force',
+      'Contributed to national climate and extreme weather programmes under the Government of India',
+      'Associated with climate-related strategic studies in collaboration with national security institutions',
+      'Served with United Nations missions and international sustainability initiatives',
+      'Climate consultant and risk analyst for institutions including the World Bank and Asian Development Bank',
+      'Recognized for operational contributions in high-reliability strategic environments',
+    ],
+    associations: [
+      'PhD in Meteorology with specialization in severe flood forecasting and ensemble modelling',
+      'Visiting Professor at TERI School of Advanced Studies',
+      'Climate expert associated with Management Development Institute Gurgaon',
+      'Published extensively in climate science, meteorology and sustainability domains',
+      'Speaker and contributor to policy discussions on climate resilience and sustainability',
+    ],
+    relevance: [
+      'Climate resilience systems',
+      'Sustainability strategy',
+      'Environmental risk assessment',
+      'Decarbonization pathways',
+      'Climate-linked infrastructure planning',
+      'Resilience-driven sustainability frameworks',
+    ],
+  },
 ]
 
 function AdvisorsSection() {
@@ -836,7 +836,7 @@ function AdvisorsSection() {
                     }}
                   >
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      <path d="M20.447 20.452H17.1v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.763V9h3.204v1.561h.046c.447-.84 1.537-1.727 3.162-1.727 3.382 0 4.007 2.226 4.007 5.121v6.497zM5.337 7.433a1.857 1.857 0 01-1.857-1.857 1.857 1.857 0 011.857-1.857 1.857 1.857 0 011.857 1.857 1.857 1.857 0 01-1.857 1.857zM6.962 20.452H3.71V9h3.252v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                     LinkedIn Profile
                   </a>
@@ -989,17 +989,17 @@ function CollabEcosystem({ scrollTo }) {
                 {/* Outer nodes */}
                 {collabNodes.map((n, i) => {
                   const rad = (n.angle * Math.PI) / 180
-                  const x   = Math.cos(rad) * R
-                  const y   = Math.sin(rad) * R
+                  const x = Math.cos(rad) * R
+                  const y = Math.sin(rad) * R
                   return (
                     <g
                       key={n.label}
                       opacity={visible ? 1 : 0}
                       style={{ transition: `opacity 0.5s ease ${0.18 + i * 0.09}s` }}
                     >
-                      <circle cx={x} cy={y} r={65} fill="#fff" stroke="#0B3D2E" strokeWidth="1.5" filter="url(#node-shadow)"/>
+                      <circle cx={x} cy={y} r={65} fill="#fff" stroke="#0B3D2E" strokeWidth="1.5" filter="url(#node-shadow)" />
                       <circle cx={x} cy={y} r={55} fill="rgba(11,61,46,0.06)" />
-                      <text x={x} y={y+3} textAnchor="middle" fill="#0B3D2E"
+                      <text x={x} y={y + 3} textAnchor="middle" fill="#0B3D2E"
                         fontFamily="Manrope" fontWeight="700" fontSize="13.5">
                         {n.label.split(' ')[0]}
                       </text>
@@ -1253,13 +1253,42 @@ function InsightsPerspectives() {
 function ContactSection() {
   const [form, setForm] = useState({ name: '', org: '', email: '', interest: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(false)
+
+  const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+  const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setSent(true)
-    setTimeout(() => setSent(false), 4500)
-    setForm({ name: '', org: '', email: '', interest: '', message: '' })
+    setSending(true)
+    setError(false)
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          organization: form.org,
+          from_email: form.email,
+          interest: form.interest,
+          message: form.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      )
+      setSent(true)
+      setForm({ name: '', org: '', email: '', interest: '', message: '' })
+      setTimeout(() => setSent(false), 5000)
+    } catch (err) {
+      console.error(err)
+      setError(true)
+    } finally {
+      setSending(false)
+    }
   }
+
 
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }))
 
@@ -1276,7 +1305,7 @@ function ContactSection() {
                 Explore Collaboration
               </h2>
               <p className="contact__info-para">
-                  SEA-Tech Innovations LLP actively engages with academia, research institutions, industry stakeholders and innovation ecosystems to accelerate sustainability-driven solutions and technology translation.
+                SEA-Tech Innovations LLP actively engages with academia, research institutions, industry stakeholders and innovation ecosystems to accelerate sustainability-driven solutions and technology translation.
               </p>
 
               <div className="contact__links">
@@ -1385,8 +1414,19 @@ function ContactSection() {
                     className="contact__textarea"
                   />
 
-                  <button type="submit" className="btn btn-primary contact__submit">
-                    Submit Inquiry <Send size={14} />
+                  {error && (
+                    <p style={{ color: '#f87171', fontSize: 13, marginTop: 4 }}>
+                      Something went wrong. Please try again or email us directly at office@seatech-innovations.com
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="btn btn-primary contact__submit"
+                    disabled={sending}
+                    style={{ opacity: sending ? 0.75 : 1, cursor: sending ? 'not-allowed' : 'pointer' }}
+                  >
+                    {sending ? 'Sending...' : 'Submit Inquiry'} <Send size={14} />
                   </button>
                 </form>
               )}
