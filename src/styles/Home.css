@@ -1419,6 +1419,7 @@
 .contact__link {
   display: flex;
   align-items: center;
+  width: fit-content;
   gap: 13px;
   color: rgba(255,255,255,0.78);
   text-decoration: none;
