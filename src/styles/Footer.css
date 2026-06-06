@@ -190,9 +190,12 @@
     padding: 14px 24px;
   }
 
-  .footer-center{
-    display: none;
-  }
+  .theme-tags-left span {
+  font-size: 9px;
+}
+.theme-tags-right span {
+  font-size: 9px;
+}
 
  
   .footer-center{

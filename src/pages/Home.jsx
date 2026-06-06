@@ -1323,7 +1323,7 @@ function ContactSection() {
               </p>
 
               <div className="contact__links">
-                <a href="tel:7484040228" className="contact__link">
+                {/* <a href="tel:7484040228" className="contact__link">
                   <div className="contact__link-icon">
                     <Phone size={17} color="#7FB069" />
                   </div>
@@ -1331,7 +1331,7 @@ function ContactSection() {
                     <div className="contact__link-label">Call</div>
                     <div className="contact__link-value">7484040228</div>
                   </div>
-                </a>
+                </a> */}
                 <a
                   href="https://wa.me/7484040228"
                   target="_blank"
@@ -1341,8 +1341,11 @@ function ContactSection() {
                   <div className="contact__link-icon">
                     <FaWhatsapp size={17} color="#7FB069" />
                   </div>
+                  <div className="contact__link-icon">
+                    <Phone size={17} color="#7FB069" />
+                  </div>
                   <div>
-                    <div className="contact__link-label">WhatsApp</div>
+                    {/* <div className="contact__link-label">Call or WhatsApp</div> */}
                     <div className="contact__link-value">7484040228</div>
                   </div>
                 </a>
@@ -1352,7 +1355,7 @@ function ContactSection() {
                     <Mail size={17} color="#7FB069" />
                   </div>
                   <div>
-                    <div className="contact__link-label">Email</div>
+                    {/* <div className="contact__link-label">Email</div> */}
                     <div className="contact__link-value">office@seatech-innovations.com</div>
                   </div>
                 </a>
