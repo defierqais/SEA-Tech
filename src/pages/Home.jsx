@@ -34,7 +34,7 @@ function FadeUp({ children, delay = 0, className = '' }) {
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(28px)',
-        transition: `opacity 0.75s ease ${delay}s, transform 0.75s ease ${delay}s`,
+        transition: `opacity 0.4s ease ${delay}s, transform 0.75s ease ${delay}s`,
       }}
       className={className}
     >
@@ -1346,7 +1346,7 @@ function ContactSection() {
                   </div>
                   <div>
                     {/* <div className="contact__link-label">Call or WhatsApp</div> */}
-                    <div className="contact__link-value">7484040228</div>
+                    <div className="contact__link-value">+91 74840 40228</div>
                   </div>
                 </a>
 
